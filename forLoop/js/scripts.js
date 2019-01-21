@@ -4,26 +4,26 @@ $(document).ready(function() {
 
     var input = $("input#userInput").val(); //30
     var arr = input.split("");
-    var letters = ["e", "y", "u", "o", "i", "a"];
-    var output ="";
+    var letters = ["e", "y", "u", "o", "i", "a","E","Y","U","O","I","A"];
+    var final ="";
 
-    for(var i =0; i<arr.length; i++){
+    for(i = 0; i<arr.length; i++){
+ 	    for(j = 0; j<letters.length;j++){
+  	     if(arr[i]===letters[j]){
 
-      for(var j=0; j<letters.length; j++){
-        if(arr[i]=== letters[j]){
-        arr[i].replace(letters[j], "-");
+    	arr.splice(i,1,"-");
 
-        }
-        alert(arr);
+   }
 
-      }
-    }
+  }
+}
+  $("#result").text(arr.join(""));
 
-
-
-
-
+  $("#toggleResult").show();
 
   event.preventDefault();
   });
+
+
+
 });
