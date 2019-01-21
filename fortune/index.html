@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Fortune Game</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Fortune Game</h1>
+      <div class="well"id="toggleForm">
+        <form id="formOne">
+          <div class="form-group">
+            <p>Check all that applies to you:</p>
+            <p><strong>What unfortunate events happened to you lately?</strong></p>
+            <input type="checkbox" name="unlucky-events" value="1"> Seeing a black cat.<br>
+            <input type="checkbox" name="unlucky-events" value="2"> Walking under the ladder.<br>
+            <input type="checkbox" name="unlucky-events" value="3"> Failing to respond to a chain letter.<br>
+            <input type="checkbox" name="unlucky-events" value="4"> Tipping a salt shake over.<br>
+            <input type="checkbox" name="unlucky-events" value="5"> Braking a mirror.<br>
+            <input type="checkbox" name="unlucky-events" value="6"> Oppening an umberella while indoors.<br>
+            <input type="checkbox" name="unlucky-events" value="7"> Putting shoes on a table.<br>
+            <br>
+
+            <p><strong>What fortunate events happened to you lately?</strong></p>
+            <input type="checkbox" name="lucky-events" value="1"> Having Begginers luck.<br>
+            <input type="checkbox" name="lucky-events" value="2"> Finding a penny and picking it up.<br>
+            <input type="checkbox" name="lucky-events" value="3"> Having a rabbits foot.<br>
+            <input type="checkbox" name="lucky-events" value="4"> Finding a four-leaf clover.<br>
+            <input type="checkbox" name="lucky-events" value="5"> Crossing fingers.<br>
+            <input type="checkbox" name="lucky-events" value="6"> Blowing a candle on a BDay cake.<br>
+            <input type="checkbox" name="lucky-events" value="7"> Haning a horseshoe above the entrance door.<br>
+            <br>
+
+          <button type="submit" class="btn btn-info btn-lg">Submit!</button>
+
+        </form>
+      </div>
+    </div>
+    <div class="well" id=toggleBadFortune>
+      <h1>Your fortune:</h1>
+      <h4>Wow, a lot of bad stuff happened to you lately, but if you pay to <a href="#">this</a> bank account, a famous wizzard will help you fight your bad luck.</h4>
+    </div>
+    <div class="well" id=toggleGoodFortune>
+      <h1>Your fortune:</h1>
+      <h4>What a lucky person you are! Just keep taking all the good vibes from this universe and believe in yourself!</h4>
+    </div>
+    <div class="well" id=toggleNeuturalFortune>
+      <h1>Your fortune:</h1>
+      <h4>You are doing good, but if you pay to <a href="#">this</a> bank account, a famous wizzard will help you attrack the good even more luck. If you bring an unlucky friend you can get a discount! That's some more luck for you right there!!!</h4>
+    </div>
+    </div>
+
+
+
+
+  </body>
+</html>
