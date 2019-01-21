@@ -2,18 +2,24 @@ $(document).ready(function() {
 
   $("#formOne").submit(function(event){
 
-    var theNumberTO = parseInt($("input#numberTO").val()); //30
-    var theNumberBY = parseInt($("input#numberBY").val()); //5
+    var input = $("input#userInput").val(); //30
+    var arr = input.split("");
+    var letters = ["e", "y", "u", "o", "i", "a"];
+    var output ="";
 
-    if(theNumberBY >0 && theNumberTO>0 && theNumberBY<theNumberTO){
-      for( i = theNumberBY; i <= theNumberTO; i += theNumberBY){
+    for(var i =0; i<arr.length; i++){
 
-      $("#result").append(" "+i)
+      for(var j=0; j<letters.length; j++){
+        if(arr[i]=== letters[j]){
+        arr[i].replace(letters[j], "-");
+
+        }
+        alert(arr);
 
       }
-    } else {
-      alert("Enter the valid number.")
     }
+
+
 
 
 
